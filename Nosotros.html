@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nosotros - Argenlandia</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/estilos2.css">
+      
+
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      
+      <!-- Encabezado -->
+      <header class="header__titulo--sticky">
+        <h1 class="header__titulo--encabezado"> Argenlandia Gaming <i>-arGG </i> <span class="animacion">&#160;</span> </h1>  
+
+      <!-- Menu de paginas -->
+        <nav class="header__nav--flex header__nav--estilo"> 
+               <h3> 
+                  <ul id="lista1">
+                     <li> <a href="index.html"> Inicio </a> </li>
+                     <li> <a href="Noticias.html"> Noticias </a> </li>
+                     <li> <a href="Tienda.html"> Tienda </a> </li>
+                     <li> <a href="Media.html"> Media </a> </li>
+                     <li> <a href="Nosotros.html"> Nosotros </a> </li>
+                  </ul> 
+            </h3>
+         </nav>
+         
+         </header>
+
+      <!-- Contenido de pagina Nosotros -->
+      <section class="gridNosotros">
+         <article>
+            <div>
+               <h3 class="titulo2">Nosotros</h3>
+               <p class="parrafo1">
+               Argenlandia Gaming es un club de esports de Argentina que tiene como objetivo colaborar con el desarrollo de la escena competitiva y gamer de todo Latinoamérica.
+               </p>
+               <p class="parrafo1">
+               Nació en el 2014 en un grupo de amigos que deseaban hacer del mundo de los videos juegos algo más que un pasatiempo, con la vision de un dia participar en torneos de alcance internacional. Hoy en dia contamos con tres equipos activos en DotA 2, Cs:GO y Fornite. 
+               </p>
+               <hr>
+            </div> 
+           
+         
+         <!--Links a las redes-->
+            <div>
+               <h3 class="titulo2">Nuestras redes</h3>
+               <p><u>Instagram</u></p>
+               <p><u>Facebook</u></p>
+               <p><u>YouTube</u></p>
+               <p><u>Twitch</u></p>
+               <p><u>Discord</u></p>
+               <br>
+            </div>
+         </article>
+
+         <div class="container">
+           <h2 class="colorForm1">Formulario de inscripción</h2>
+           <p class="parrafo1">Aca podras incribirte en el torneo para poder formar parte del equipo.</p>
+
+           <!-- Button to Open the Modal -->
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+             Abrir formulario
+           </button>
+
+           <!-- The Modal -->
+           <div class="modal fade" id="myModal">
+             <div class="modal-dialog">
+               <div class="modal-content">
+               
+                 <!-- Modal Header -->
+                 <div class="modal-header">
+                   <h4 class="modal-title">Inscripción al torneo</h4>
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 </div>
+                 
+                 <!-- Modal body -->
+                 <div class="modal-body">
+                     <form action="#" method="get" class=".boxEstilo">
+                              <legend>Datos de registro</legend>
+                              <label for=nombre>Nombre</label><br>
+                              <input type="text" name="nombre">
+                              <br><br>
+                              <label for=apellido>Apellido</label><br>
+                              <input type="text" name="apellido">
+                              <br><br>
+                              <label for=mail>E-mail</label><br>
+                              <input type="text" name="mail">
+                              <br><br>
+                              <label for="descripcion">Contanos porque te gustaria participar:</label><br>
+                              <textarea name="descripcion" rows="3"></textarea>
+                              <br><br>
+                              <label for=juegos>Elije el juego donde quieres competir:</label><br>
+                              <select name="juegos">
+                                 <option value="dota2">DotA 2</option>
+                                 <option value="lol">Fornite</option>
+                                 <option value="csgo">CS:GO</option>
+                              </select>
+                              <br>
+                              <label for="acepta">Acepta Terminos y condiciones? </label>
+                              <input type="checkbox" name="acepta" value=1>
+                              <br><br>
+                              <input type="submit" name="enviar">
+                              <input type="reset" name="reset" value="Limpiar datos">
+                     </form>
+                 </div>
+                 
+                 <!-- Modal footer 
+                 <div class="modal-footer">
+                   <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                 </div>-->
+                 
+               </div>
+             </div>
+           </div>
+           
+         </div>
+
+         <!--<article>
+            <h3 class="titulo2">Inscripción al torneo</h3>
+            <div>
+               <form action="#" method="get">
+                  <fieldset id="fieldsetEstilo">
+                     <legend>Datos de registro</legend>
+                     <label for=nombre>Nombre</label><br>
+                     <input type="text" name="nombre">
+                     <br><br>
+                     <label for=apellido>Apellido</label><br>
+                     <input type="text" name="apellido">
+                     <br><br>
+                     <label for=mail>E-mail</label><br>
+                     <input type="text" name="mail">
+                     <br><br>
+                     <label for="descripcion">Contanos porque te gustaria participar:</label><br>
+                     <textarea name="descripcion" rows="5"></textarea>
+                     <br><br>
+                     <!--<label for=juegos>Elije el juego donde quieres competir:</label><br>
+                     <select name="juegos">
+                        <option value="dota2">DotA 2</option>
+                        <option value="lol">Fornite</option>
+                        <option value="csgo">CS:GO</option>
+                     </select>
+                  </fieldset>
+                     <br>
+                     <label for="acepta">Acepta Terminos y condiciones? </label>
+                     <input type="checkbox" name="acepta" value=1>
+                     <br><br>
+                     <input type="submit" name="enviar">
+                     <input type="reset" name="reset" value="Limpiar datos">
+               </form>
+            </div>
+         </article> -->
+      </section>
+
+      <br><br><br><br>
+      <!-- Pie de pagina -->
+      <footer> 
+         <h5 class="flexFooter"> 
+            <div>Argenlandia Gaming. 2014 - 2020 © </div>
+            <div class="footerDerecha">
+               Instagram
+               Facebook
+               YouTube
+               Twitch
+               Discord
+            </div>
+         </h5>
+      </footer>
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+</html>
